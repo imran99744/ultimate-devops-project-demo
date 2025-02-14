@@ -66,7 +66,7 @@ jobs:
           uses: docker/login-action@v3
           with:
             username: ${{ secrets.DOCKER_USERNAME }}
-            password: ${{ secrets.DOCKER_TOKEN }}
+            password: ${{ secrets.DOCKER_PASS }}
 
         - name: Docker Push
           uses: docker/build-push-action@v6
@@ -95,7 +95,7 @@ jobs:
         - name: Commit and push changes
           run: |
             git config --global user.email "imrandevopsworks@gmail.com"
-            git config --global user.name "MD AL IMRAN"
+            git config --global user.name ""
             git add kubernetes/productcatalog/deploy.yaml
             git commit -m "[CI]: Update product catalog image tag"
             git push origin HEAD:main -f
