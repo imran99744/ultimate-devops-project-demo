@@ -176,3 +176,12 @@ If the required permission is missing, update the policy to include it
     --policy-document file://policy.json \
     --set-as-default`
 
+# CI/CD with GitHub Actions and ArgoCD
+
+1. GitHub Actions:
+
+     - The CI pipeline builds and tests the application on every PR to the main branch.
+
+     - The CD pipeline uses ArgoCD for GitOps-based deployment.
+
+
