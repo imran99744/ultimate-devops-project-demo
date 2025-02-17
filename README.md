@@ -183,3 +183,46 @@ If the required permission is missing, update the policy to include it
      - The CI pipeline builds and tests the application on every PR to the main branch.
 
      - The CD pipeline uses ArgoCD for GitOps-based deployment.
+  
+# Project Architecture
+![open-tele](https://github.com/user-attachments/assets/eb919973-0214-4075-9812-1e82f6a771c9)
+
+
+## Why I Built This
+I undertook this project to:
+
+
+  - Learn Terraform for cloud resource provisioning from scratch.
+
+  - Master Kubernetes and AWS EKS for deploying scalable applications.
+
+  - Implement CI/CD and GitOps to automate deployment workflows.
+
+  - Understand and implement the AWS Load Balancer (ALB) Ingress Controller for managing ingress traffic.
+
+## Challenges Faced
+
+1. Containerization:
+
+     - Writing Dockerfiles for multi-language services required understanding each language’s build and runtime dependencies.
+
+2. Terraform Configuration:
+
+     - Setting up IAM roles, VPCs, and EKS clusters from scratch was complex but rewarding.
+
+3. ArgoCD Setup:
+
+     - Syncing the application with ArgoCD required careful configuration of the Git repository and Kubernetes manifests.
+
+4. ALB Ingress Controller:
+
+     - Configuring the Ingress resource and ensuring proper routing was initially challenging but provided valuable insights into Kubernetes networking.
+  
+## Future Improvements
+- Add autoscaling for the microservices based on traffic.
+
+- Integrate security scanning into the CI/CD pipeline.
+
+- Explore multi-region deployment for high availability.
+
+- Enhance monitoring and alerting using Prometheus and Grafana.
