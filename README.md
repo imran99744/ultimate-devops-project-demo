@@ -1,5 +1,5 @@
 # OpenTelemetry E-Commerce Microservices Demo
-This project demonstrates the implementation of a distributed e-commerce application using 20 microservices. The application is deployed on AWS EKS (Elastic Kubernetes Service) and includes a full CI/CD pipeline using GitHub Actions and GitOps with ArgoCD.
+This project demonstrates the implementation of a distributed e-commerce application using 20 microservices. The application is deployed on AWS EKS (Elastic Kubernetes Service) and includes a full CI/CD pipeline using GitHub Actions and GitOps with ArgoCD. Additionally, the AWS Load Balancer (ALB) Ingress Controller is implemented to manage ingress traffic.
 
 ## Key Features
 - 20 Microservices: Simulates a real-world e-commerce platform with services written in Go, .NET, Python, and more.
